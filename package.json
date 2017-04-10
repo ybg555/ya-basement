@@ -1,0 +1,25 @@
+{
+  "name": "ya-basement",
+  "version": "1.0.2",
+  "description": "basic service for work",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "basement",
+    "basic",
+    "tools"
+  ],
+  "dependencies": {
+    "colors": "^1.1.2",
+    "commander": "^2.9.0",
+    "internal-ip": "^1.2.0",
+    "public-ip": "^2.3.3"
+  },
+  "bin": {
+    "ya": "./bin/ya.js"
+  },
+  "author": "yongbigang <bigang.ybg@alibaba-inc.com>",
+  "license": "MIT"
+}
