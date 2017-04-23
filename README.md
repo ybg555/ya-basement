@@ -12,13 +12,14 @@ ya-basement
 
 * 基于命令行快速打开文件或文件夹，可自定义配置路径
 * 获取内、外网IP地址
+* 中英文快速翻译，基于有道翻译
 
 ### Installation
 
 ---
 
 ```shell
-npm install -g ya-basement
+npm i -g ya-basement
 ```        
 
 ### Usages
@@ -26,29 +27,31 @@ npm install -g ya-basement
 ---
 
 ```shell
-ya config pathName path 先配置本地常需打开的文件或目录
-ya open pathName or path 命令行快速打开
+ya config dirName dirPath 先配置本地常需打开的文件或目录
+ya open dirName or dirPath 命令行快速打开
 
 ya ip 获取内、外网IP
+
+ya yd man 中英文快速翻译，基于有道翻译
 ```
 
 ### Issues
 
 ---
 
-Submit the issues if you find any bug or have any suggestion.
+Submit the [issues](https://github.com/ybg555/ya-basement/issues) if you find any bug or have any suggestion.
 
 ### Contribution
 
 ---
 
-Fork the repository and submit pull requests.
+Fork the [repository](https://github.com/ybg555/ya-basement) and submit pull requests.
 	
 ### Release Notes
 
 ---
 
-see CHANGELOG
+[CHANGELOG](./CHANGELOG.md)
 	
 ### License
 

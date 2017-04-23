@@ -1,24 +1,31 @@
 {
   "name": "ya-basement",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "basic service for work",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "ya": "./bin/ya.js"
   },
   "keywords": [
     "basement",
     "basic",
-    "tools"
+    "tools",
+    "open dir",
+    "ip"
   ],
   "dependencies": {
+    "co-fs-extra": "^1.2.1",
     "colors": "^1.1.2",
-    "commander": "^2.9.0",
+    "common-bin": "^2.3.0",
     "internal-ip": "^1.2.0",
-    "public-ip": "^2.3.3"
+    "public-ip": "^2.3.3",
+    "superagent": "^3.5.2"
   },
   "bin": {
     "ya": "./bin/ya.js"
+  },
+  "engines": {
+    "node": ">= 6.0.0"
   },
   "author": "yongbigang <bigang.ybg@alibaba-inc.com>",
   "license": "MIT"
