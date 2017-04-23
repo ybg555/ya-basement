@@ -7,11 +7,11 @@
     "ya": "./bin/ya.js"
   },
   "keywords": [
-    "basement",
-    "basic",
-    "tools",
     "open dir",
-    "ip"
+    "ip",
+    "translation",
+    "basement",
+    "tools"
   ],
   "dependencies": {
     "co-fs-extra": "^1.2.1",

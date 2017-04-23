@@ -8,7 +8,7 @@ ya-basement
 
 ### Features
 
----
+-------
 
 * 基于命令行快速打开文件或文件夹，可自定义配置路径
 * 获取内、外网IP地址
@@ -45,17 +45,17 @@ Submit the [issues](https://github.com/ybg555/ya-basement/issues) if you find an
 
 ---
 
-Fork the [repository](https://github.com/ybg555/ya-basement) and submit pull requests.
+Fork the [repository](https://github.com/ybg555/ya-basement/tree/master) and submit pull requests.
 	
 ### Release Notes
 
 ---
 
-[CHANGELOG](./CHANGELOG.md)
+[CHANGELOG](https://github.com/ybg555/ya-basement/blob/master/CHANGELOG.md)
 	
 ### License
 
 ---
 
-[![npm](https://img.shields.io/npm/l/ya-basement.svg)]()
+[![npm](https://img.shields.io/npm/l/ya-basement.svg)](https://github.com/ybg555/ya-basement/blob/master/LICENSE.md)
 

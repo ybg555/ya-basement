@@ -37,7 +37,6 @@ class OpenCommand extends BaseCommand {
         if (err || !res.ok) {
           console.log('error, please try again!'.red);
         } else {
-          console.log('xxx: ', res.body);
           const translation = res.body.translation ? res.body.translation.join(' / ') : false;
           const otherInfo = res.body.basic ? res.body.basic.explains.join(' / ') : false;
           if (translation) console.log('translation: '.green, translation);
