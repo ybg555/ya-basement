@@ -30,7 +30,7 @@
     "ya": "./bin/ya.js"
   },
   "engines": {
-    "node": ">= 4.0.0"
+    "node": ">= 6.0.0"
   },
   "author": "yongbigang <bigang.ybg@alibaba-inc.com>",
   "license": "MIT"
