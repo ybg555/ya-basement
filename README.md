@@ -1,9 +1,9 @@
 ya-basement
 ==========================
-[![Travis](https://img.shields.io/travis/ybg555/ya-basement.svg)](https://www.npmjs.com/package/ya-basement)
+[![Travis](https://img.shields.io/travis/ybg555/ya-basement.svg)](https://travis-ci.org/ybg555/ya-basement)
 [![npm](https://img.shields.io/npm/dm/ya-basement.svg)](https://www.npmjs.com/package/ya-basement)
 [![npm](https://img.shields.io/npm/v/ya-basement.svg)](https://www.npmjs.com/package/ya-basement)
-
+[![node](https://img.shields.io/node/v/ya-basement.svg)](https://www.npmjs.com/package/ya-basement)
 
 本地常用功能操作通过命令集来完成
 

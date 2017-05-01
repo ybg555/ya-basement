@@ -1,6 +1,6 @@
 {
   "name": "ya-basement",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "basic service for work",
   "main": "main.js",
   "scripts": {
@@ -30,7 +30,7 @@
     "ya": "./bin/ya.js"
   },
   "engines": {
-    "node": ">= 6.0.0"
+    "node": ">= 4.0.0"
   },
   "author": "yongbigang <bigang.ybg@alibaba-inc.com>",
   "license": "MIT"
