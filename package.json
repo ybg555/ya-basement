@@ -2,9 +2,10 @@
   "name": "ya-basement",
   "version": "1.0.5",
   "description": "basic service for work",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "ya": "./bin/ya.js"
+    "ya": "./bin/ya.js",
+    "test": "eslint ."
   },
   "keywords": [
     "open dir",
@@ -20,6 +21,10 @@
     "internal-ip": "^1.2.0",
     "public-ip": "^2.3.3",
     "superagent": "^3.5.2"
+  },
+  "devDependencies": {
+    "eslint": "~2.12.0",
+    "eslint-config-ucweb": "^2"
   },
   "bin": {
     "ya": "./bin/ya.js"

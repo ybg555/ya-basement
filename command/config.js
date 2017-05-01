@@ -7,7 +7,7 @@
 
 const BaseCommand = require('../lib/BaseCommand');
 const fs = require('fs');
-const fse = require('co-fs-extra')
+const fse = require('co-fs-extra');
 const path = require('path');
 
 class ConfigCommand extends BaseCommand {

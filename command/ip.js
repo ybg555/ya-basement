@@ -24,9 +24,9 @@ class IpCommand extends BaseCommand {
 
   * run(props) {
     console.info('internal ip: '.cool, internalIp.v4());
-    //ipify((err, ip) => {
+    // ipify((err, ip) => {
     //  console.log('external ip: ', ip);
-    //});
+    // });
 
     publicIp.v4().then(ip => {
       console.log('external ip: '.cool, ip);

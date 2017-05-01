@@ -1,0 +1,9 @@
+---
+extends: ucweb
+rules:
+  no-underscore-dangle: 0
+  global-require: 0
+  # test 允许匿名函数
+  func-names: 0
+  # test 允许不用箭头函数
+  prefer-arrow-callback: 0
