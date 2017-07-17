@@ -1,27 +1,31 @@
 {
   "name": "ya-basement",
-  "version": "1.0.8",
+  "version": "1.2.0",
   "description": "basic service for work",
   "main": "main.js",
   "scripts": {
-    "ya": "./bin/ya.js",
-    "test": "eslint ."
+    "test": "eslint .",
+    "postinstall": "node ./script/syncConf.js"
   },
   "keywords": [
     "open dir",
     "tinify",
     "translation",
+    "yd",
     "ip",
-    "basement",
-    "tools"
+    "boilerplate",
+    "basement"
   ],
   "dependencies": {
     "cli": "^1.0.1",
     "colors": "^1.1.2",
     "common-bin": "^2.3.0",
+    "copy-dir": "^0.3.0",
+    "download-git-repo": "^1.0.1",
+    "homedir": "^0.6.0",
     "image-compress-tinify": "^1.0.7",
-    "internal-ip": "^1.2.0",
-    "public-ip": "^2.3.3",
+    "inquirer": "^3.2.0",
+    "internal-ip": "^2.0.0",
     "urllib": "^2.22.0"
   },
   "devDependencies": {

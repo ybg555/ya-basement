@@ -11,8 +11,9 @@ ya-basement
 
 * 基于命令行快速打开文件或文件夹，可自定义配置路径
 * 中英文快速翻译，基于有道翻译
-* 基于tinify压缩图片
-* 获取内、外网IP地址
+* 基于 tinify 批量压缩图片
+* 常用模板快速生成到指定目录
+* 获取内、外网 IP 地址
 
 ## Installation
 
@@ -22,17 +23,39 @@ npm i -g ya-basement
 
 ## Usages
 
+* 根据别名快速打开常用目录
+
 ```shell
-ya open --key=dirName --value=dirPath   自定义配置打开的路径别名
+ya open -k=dirName -v=dirPath   配置打开的路径别名
 ya open dirName or dirPath 命令行快速打开文件/文件夹
+```
 
+* 翻译
+
+```shell
 ya yd man 中英文快速翻译，基于有道翻译
+```
 
-ya tinify --key=secretKey  配置密钥
+* 批量压缩图片
+
+```shell
+ya tinify -k=secretKey  配置 tinify 密钥
 ya tinify --path=dirPath [--size=70]  压缩图片，--size为显示阀值
+```
 
+* 常用模板快速生成到指定目录
+
+```shell
+ya init -k=templateName -v=mygitlab.com:owner/name#branch or github:owner/name or localDir  严格按照格式录入，支持gitlab、github、本地文件夹
+ya init -d=dir 配置输出目录后，在命令行的下拉框选择模板
+```
+
+* 获取IP
+
+```shell
 ya ip 获取内、外网IP
 ```
+
 
 ## Issues
 

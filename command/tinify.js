@@ -18,10 +18,12 @@ class TinifyCommand extends BaseCommand {
     this.yargs.usage('Usage: ya tinify --path=dirPath');
     this.options = {
       path: {
+        // alias: 'p', 依赖compress用的是--path参数
         type: 'string',
         description: 'tinify images`s path'
       },
       key: {
+        alias: 'k',
         type: 'string',
         description: 'config tinify`s secret key'
       }
@@ -56,6 +58,7 @@ class TinifyCommand extends BaseCommand {
         }, err => {
           if (err) throw err;
           alias.logger.info('config successful => ' + content);
+          alias.backupConfig();
         });
       });
     } else if (path) {
@@ -64,7 +67,7 @@ class TinifyCommand extends BaseCommand {
           key: secretKey // tinify的密钥
         });
       } else {
-        alias.logger.warn('must add secretKey: ya tinify --key=secretKey');
+        alias.logger.warn('must add secretKey: ya tinify -k=secretKey');
       }
     } else {
       alias.logger.info('Usage: ya tinify --path=dirPath');

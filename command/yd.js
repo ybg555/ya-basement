@@ -36,7 +36,7 @@ class OpenCommand extends BaseCommand {
       dataType: 'json',
     }, (err, data, res) => {
       if (err) {
-        console.log('error, please try again!'.red);
+        console.log('[error] please try again!'.red);
       } else {
         const translation = data.translation ? data.translation.join(' / ') : false;
         const otherInfo = data.basic ? data.basic.explains.join(' / ') : false;

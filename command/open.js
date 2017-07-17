@@ -18,10 +18,12 @@ class OpenCommand extends BaseCommand {
     this.yargs.usage('Usage: ya open <dirName or dirPath>');
     this.options = {
       key: {
+        alias: 'k',
         type: 'string',
         description: 'write config key'
       },
       value: {
+        alias: 'v',
         type: 'string',
         description: 'write config value'
       }
@@ -70,10 +72,11 @@ class OpenCommand extends BaseCommand {
           }, err => {
             if (err) throw err;
             alias.logger.info('config successful => ' + content);
+            alias.backupConfig();
           });
         });
       } else {
-        alias.logger.warn('新增配置格式错误: ya open --key=name --value=/xx/path');
+        alias.logger.warn('新增配置格式错误: ya open -k=name -v=/xx/path');
       }
     }
 

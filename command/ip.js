@@ -6,9 +6,9 @@
 'use strict';
 
 const BaseCommand = require('../lib/BaseCommand');
-// const ipify = require('ipify'); 有点慢
-const publicIp = require('public-ip');
+// const publicIp = require('public-ip');
 const internalIp = require('internal-ip');
+const urllib = require('urllib');
 
 class IpCommand extends BaseCommand {
   constructor(rawArgv) {
@@ -24,13 +24,20 @@ class IpCommand extends BaseCommand {
 
   * run(props) {
     const alias = this;
-    alias.logger.info(internalIp.v4(), 'internal ip: ');
-    // ipify((err, ip) => {
-    //  console.log('external ip: ', ip);
-    // });
-
-    publicIp.v4().then(ip => {
-      alias.logger.info(ip, 'external ip: ');
+    urllib.request('http://1212.ip138.com/ic.asp', {
+      method: 'GET',
+      dataType: 'text'
+    }, (err, data, res) => {
+      if (err) {
+        alias.logger.error('please try again!');
+      } else {
+        const ip = data.match(/\d+\.\d+\.\d+\.\d+/)[0];
+        alias.logger.info(ip, 'external ip: ');
+        internalIp.v4().then(ip => {
+          alias.logger.info(ip, 'internal ip: ');
+        });
+      }
+      // alias.spinner('', true);
     });
   }
 }

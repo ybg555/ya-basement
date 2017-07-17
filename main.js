@@ -20,7 +20,7 @@ class MainCommand extends Command {
     // Object.assign(this.helper, helper);
 
     // more custom with `yargs` api, such as you can use `my-git -V`
-    this.yargs.alias('V', 'version');
+    this.yargs.alias('v', 'version');
   }
 }
 
