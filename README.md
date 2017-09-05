@@ -46,8 +46,8 @@ ya tinify --path=dirPath [--size=70]  压缩图片，--size为显示阀值
 * 常用模板快速生成到指定目录
 
 ```shell
-ya init -k=templateName -v=mygitlab.com:owner/name#branch or github:owner/name or localDir  严格按照格式录入，支持gitlab、github、本地文件夹
-ya init -d=dir 配置输出目录后，在命令行的下拉框选择模板
+ya init -k=templateName -v=mygitlab.com:owner/name#branch or github:owner/name or localDir  配置模板名和模板存放地址，地址支持gitlab、github、本地文件夹
+ya init -d=dir 填写模板存放地址，在命令行的下拉框选择配置好的模板名
 ```
 
 * 获取IP
