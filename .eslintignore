@@ -1,3 +1,4 @@
 node_modules
 config
 lib/BaseCommand.js
+command/benchmark.js

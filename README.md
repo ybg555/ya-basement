@@ -5,7 +5,7 @@ ya-basement
 [![npm](https://img.shields.io/npm/v/ya-basement.svg)](https://www.npmjs.com/package/ya-basement)
 [![node](https://img.shields.io/node/v/ya-basement.svg)](https://www.npmjs.com/package/ya-basement)
 
-本地常用功能操作通过命令集来完成
+工作常用功能操作通过命令集来完成
 
 ## Features
 
