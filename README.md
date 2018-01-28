@@ -14,6 +14,7 @@ ya-basement
 * 基于 tinify 批量压缩图片
 * 常用模板快速生成到指定目录
 * 获取内、外网 IP 地址
+* 代码性能基准测试
 
 ## Installation
 
@@ -25,9 +26,12 @@ npm i -g ya-basement
 
 * 根据别名快速打开常用目录
 
-```shell
-ya open -k=dirName -v=dirPath   配置打开的路径别名
-ya open dirName or dirPath 命令行快速打开文件/文件夹
+```js
+// 配置打开的路径别名
+ya open -k=dirName -v=dirPath
+
+// 打开文件/文件夹
+ya open dirName or dirPath
 ```
 
 * 翻译
@@ -38,15 +42,21 @@ ya yd man 中英文快速翻译，基于有道翻译
 
 * 批量压缩图片
 
-```shell
-ya tinify -k=secretKey  配置 tinify 密钥
-ya tinify --path=dirPath [--size=70]  压缩图片，--size为显示阀值
+```js
+// 配置 tinify 密钥
+ya tinify -k=secretKey
+
+// 压缩图片，--size为显示阀值
+ya tinify --path=dirPath [--size=70]
 ```
 
 * 常用模板快速生成到指定目录
 
-```shell
-ya init -k=templateName -v=mygitlab.com:owner/name#branch or github:owner/name or localDir  配置模板名和模板存放地址，地址支持gitlab、github、本地文件夹
+```js
+// 配置模板名和模板存放地址，地址支持gitlab、github、本地文件夹
+ya init -k=templateName -v=mygitlab.com:owner/name#branch or github:owner/name or localDir
+
+// 使用
 ya init -d=dir 填写模板存放地址，在命令行的下拉框选择配置好的模板名
 ```
 
@@ -54,6 +64,12 @@ ya init -d=dir 填写模板存放地址，在命令行的下拉框选择配置�
 
 ```shell
 ya ip 获取内、外网IP
+```
+
+* 代码性能基准测试
+
+```shell
+ya benchmark -a=js文件 -b=js文件
 ```
 
 
