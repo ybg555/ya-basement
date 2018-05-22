@@ -1,6 +1,6 @@
 {
   "name": "ya-basement",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "basic service for work",
   "main": "main.js",
   "scripts": {
