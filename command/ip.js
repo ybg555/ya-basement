@@ -24,7 +24,7 @@ class IpCommand extends BaseCommand {
 
   * run(props) {
     const alias = this;
-    urllib.request('http://2017.ip138.com/ic.asp', {
+    urllib.request('http://' + new Date().getFullYear() + '.ip138.com/ic.asp', {
       method: 'GET',
       dataType: 'text'
     }, (err, data, res) => {
