@@ -1,6 +1,6 @@
 {
   "name": "ya-basement",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "description": "basic service for work",
   "main": "main.js",
   "scripts": {
@@ -30,7 +30,7 @@
     "urllib": "^2.22.0"
   },
   "devDependencies": {
-    "eslint": "^3.2.2",
+    "eslint": "^4.18.2",
     "eslint-config-ucweb": "^2"
   },
   "bin": {
@@ -39,7 +39,7 @@
   "engines": {
     "node": ">= 6.0.0"
   },
-  "author": "yongbigang <bigang.ybg@alibaba-inc.com>",
+  "author": "bigang.ybg <93745726@qq.com>",
   "repository": {
     "type": "git",
     "url": "https://github.com/ybg555/ya-basement"
